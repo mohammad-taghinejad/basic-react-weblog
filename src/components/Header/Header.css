@@ -13,3 +13,36 @@
 .header-btns {
   user-select: none;
 }
+
+@media (max-width: 1024px) {
+  .client-header {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .client-header {
+    height: auto;
+    min-height: 80px;
+    padding: 16px 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .client-header > div:first-child {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .client-header .nav-link {
+    font-size: 14px;
+  }
+
+  .header-btns {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

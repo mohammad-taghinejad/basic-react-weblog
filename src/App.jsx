@@ -91,7 +91,8 @@ function App() {
     <div>
       <Header />
       <main>
-        <section id="hero-section"
+        <section
+          id="hero-section"
           className="container flex items-center justify-between"
         >
           <div id="headline">
@@ -109,7 +110,7 @@ function App() {
             </div>
           </div>
           <div id="image-container">
-            <img src="./public/images/hero-illustrator.png" />
+            <img src="/images/hero-illustrator.png" alt="تصویر معرفی سبزبلاگ" />
           </div>
         </section>
         <section id="articles-section">

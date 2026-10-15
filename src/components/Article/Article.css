@@ -10,3 +10,33 @@
 .price-number {
   color: midnightblue;
 }
+
+.article-card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.article-card .article-footer {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.article-card .article-title,
+.article-card .article-caption {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .article-card header {
+    height: 200px;
+  }
+
+  .article-card .article-footer {
+    font-size: 12px;
+  }
+
+  .article-card .price {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}

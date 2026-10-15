@@ -23,3 +23,30 @@
     color: rgb(83, 83, 83);
   }
 }
+
+@media (max-width: 640px) {
+  #client-footer {
+    height: auto;
+    min-height: 40vh;
+    padding: 40px 5%;
+    box-sizing: border-box;
+  }
+
+  #footer-headline {
+    width: 100%;
+  }
+
+  #footer-headline #footer-title {
+    font-size: 24px !important;
+    line-height: 1.7;
+  }
+
+  #footer-headline .footer-caption {
+    line-height: 2;
+  }
+
+  #footer-headline .footer-cta {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
