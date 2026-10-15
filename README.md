@@ -41,13 +41,13 @@ The project is intended for learning and practicing React development.
 1. Clone the repository:
 
    ```bash
-   git clone <YOUR_REPOSITORY_URL>
+   git clone <https://github.com/mohammad-taghinejad/basic-react-weblog>
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd <YOUR_PROJECT_DIRECTORY>
+   cd <basic-react-weblog>
    ```
 
 3. Install dependencies:
