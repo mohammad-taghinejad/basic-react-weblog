@@ -9,8 +9,26 @@ function Article({
   price,
   isFree = true,
 }) {
+  const onclickHandler = (id) => {
+    console.log(
+      "%c 📚 Selected Article ",
+      "background: #1e293b; color: #a3e635; font-size: 14px; font-weight: bold; padding: 8px; border-radius: 6px;",
+    );
+
+    console.table({
+      ID: id,
+      Title: title,
+      Author: author,
+      Price: price ? `${price.toLocaleString()} تومان` : "رایگان",
+      Published: publish_date,
+    });
+  };
+
   return (
-    <article className="article-card">
+    <article
+      className="article-card"
+      onClick={() => onclickHandler(crypto.randomUUID())}
+    >
       <header>
         <img src={image} alt="Article Img" />
       </header>
@@ -19,7 +37,9 @@ function Article({
         <p className="article-caption">{description}</p>
         <div className="price">
           <p className="price-title">قیمت دوره: </p>
-          <p className="price-number">{ price ? price.toLocaleString() + "تومان" : "رایگان" }</p>
+          <p className="price-number">
+            {price ? price.toLocaleString() + "تومان" : "رایگان"}
+          </p>
         </div>
       </main>
       <div className="divider"></div>
