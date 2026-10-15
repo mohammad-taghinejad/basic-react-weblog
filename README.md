@@ -1,6 +1,6 @@
 # SabzBlog — React Blog UI
 
-![SabzBlog Demo](/sabzlog.gif)
+![SabzBlog Demo](./public/sabzlog.gif)
 
 A Persian blog landing page built with React to refresh my React skills and practice component-based UI development.
 
